@@ -16,7 +16,7 @@ import com.AcmeFresh.modelEntity.ListOfInfrastructureProvidedForCustomer;
 import com.AcmeFresh.services.serviceImplementation.CustomerInterestedInInfrastructureServiceImpl;
 import com.AcmeFresh.modelEntity.CustomerInterestedInInfrastructure;
 @RestController
-@RequestMapping("homepage")
+@RequestMapping("/homepage")
 public class HomepageController {
 	
 	@Autowired
@@ -26,6 +26,11 @@ public class HomepageController {
 	public ResponseEntity<List<ListOfInfrastructureProvidedForCustomer>> listOfInfrastructueProvidedForCustomer(){
 		List<ListOfInfrastructureProvidedForCustomer> values=Arrays.asList(ListOfInfrastructureProvidedForCustomer.values());
 		return new ResponseEntity<>(values, HttpStatus.ACCEPTED);
+	}
+	
+	@GetMapping("/")
+	public ResponseEntity<String> welcome(){
+		return new ResponseEntity<>("Welcome to AcmeFresh, We Provide services for Hydroponic Infrastructure and Produce from Hydroponic Farms.", HttpStatus.ACCEPTED);
 	}
 	
 	@PostMapping("/products/newrequest")

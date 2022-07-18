@@ -24,7 +24,7 @@ import com.AcmeFresh.services.serviceImplementation.StoreCustomerServiceImpl;
 
 
 @RestController
-@RequestMapping("/store/customer")
+@RequestMapping("/homepage/store/customer")
 public class CustomerController {
 	@Autowired
 	private LoginServiceImpl loginService;

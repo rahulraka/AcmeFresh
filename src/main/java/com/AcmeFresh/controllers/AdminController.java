@@ -27,7 +27,7 @@ import com.AcmeFresh.services.serviceInterfaces.LoginService;
 
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/homepage/admin")
 public class AdminController {
 
 	@Autowired
