@@ -1,0 +1,60 @@
+2022-07-18 11:19:48.253  INFO 32972 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Starting AcmeFreshApplicationTests using Java 17.0.2 on LAPTOP-NP66V321 with PID 32972 (started by ask4R in C:\Users\ask4R\OneDrive\Desktop\Raka-Java\AcmeFresh)
+2022-07-18 11:19:48.258 DEBUG 32972 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-18 11:19:48.261  INFO 32972 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-07-18 11:19:53.940  INFO 32972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-18 11:19:54.542  INFO 32972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 550 ms. Found 8 JPA repository interfaces.
+2022-07-18 11:19:57.869  INFO 32972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-18 11:19:58.197  INFO 32972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-18 11:19:59.228  INFO 32972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-18 11:20:00.202  INFO 32972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-18 11:20:02.264  INFO 32972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-18 11:20:02.489  INFO 32972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-18 11:20:07.016  INFO 32972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-18 11:20:07.066  INFO 32972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-18 11:20:11.660  WARN 32972 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-18 11:20:13.164  INFO 32972 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-18 11:20:16.111  INFO 32972 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-07-18 11:20:16.264  INFO 32972 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-18 11:20:16.495  INFO 32972 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-18 11:20:17.438  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addNewProductUsingPOST_1
+2022-07-18 11:20:17.550  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePriceByProductIdUsingPATCH_1
+2022-07-18 11:20:17.567  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateProductUsingPUT_1
+2022-07-18 11:20:17.646  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteCustomerUsingDELETE_1
+2022-07-18 11:20:17.716  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAdminUsingPOST_1
+2022-07-18 11:20:17.731  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logoutCustomerUsingGET_1
+2022-07-18 11:20:17.758  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerCustomerUsingPOST_1
+2022-07-18 11:20:17.777  INFO 32972 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateCustomerUsingPUT_1
+2022-07-18 11:20:18.059  INFO 32972 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Started AcmeFreshApplicationTests in 31.847 seconds (JVM running for 38.147)
+2022-07-18 11:20:19.691  INFO 32972 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-18 11:20:19.698  INFO 32972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-18 11:20:19.778  INFO 32972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-18 11:23:28.217  INFO 26592 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Starting AcmeFreshApplicationTests using Java 17.0.2 on LAPTOP-NP66V321 with PID 26592 (started by ask4R in C:\Users\ask4R\OneDrive\Desktop\Raka-Java\AcmeFresh)
+2022-07-18 11:23:28.222 DEBUG 26592 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-18 11:23:28.224  INFO 26592 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-07-18 11:23:33.746  INFO 26592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-18 11:23:34.314  INFO 26592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 511 ms. Found 8 JPA repository interfaces.
+2022-07-18 11:23:38.800  INFO 26592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-18 11:23:39.346  INFO 26592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-18 11:23:40.551  INFO 26592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-18 11:23:41.645  INFO 26592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-18 11:23:43.808  INFO 26592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-18 11:23:44.060  INFO 26592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-18 11:23:49.580  INFO 26592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-18 11:23:49.627  INFO 26592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-18 11:23:55.421  WARN 26592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-18 11:23:57.377  INFO 26592 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-18 11:24:01.122  INFO 26592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-07-18 11:24:01.319  INFO 26592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-07-18 11:24:01.517  INFO 26592 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-07-18 11:24:02.550  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addNewProductUsingPOST_1
+2022-07-18 11:24:02.678  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePriceByProductIdUsingPATCH_1
+2022-07-18 11:24:02.720  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateProductUsingPUT_1
+2022-07-18 11:24:02.754  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteCustomerUsingDELETE_1
+2022-07-18 11:24:02.784  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAdminUsingPOST_1
+2022-07-18 11:24:02.801  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logoutCustomerUsingGET_1
+2022-07-18 11:24:02.835  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerCustomerUsingPOST_1
+2022-07-18 11:24:02.847  INFO 26592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateCustomerUsingPUT_1
+2022-07-18 11:24:02.996  INFO 26592 --- [main] com.AcmeFresh.AcmeFreshApplicationTests  : Started AcmeFreshApplicationTests in 36.726 seconds (JVM running for 42.922)
+2022-07-18 11:24:04.611  INFO 26592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-18 11:24:04.617  INFO 26592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-18 11:24:04.674  INFO 26592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
