@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.AcmeFresh.DTO.LoginDTO;
+import com.AcmeFresh.DTO.RegisteringDTO;
 import com.AcmeFresh.modelEntity.AcmeFreshProduce;
 import com.AcmeFresh.modelEntity.Admin;
 import com.AcmeFresh.modelEntity.AdminSession;
@@ -47,7 +48,7 @@ public class AdminController {
 	}
 
 	@PatchMapping("/update/{username}")
-	public ResponseEntity<Admin> updateAdminPassword(@Valid @RequestBody Admin dto, @PathVariable("username") String username,
+	public ResponseEntity<Admin> updateAdminPassword(@Valid @RequestBody LoginDTO dto, @PathVariable("username") String username,
 			@RequestParam String key) {
 		return new ResponseEntity<>(adminService.updatePassword(dto, username, key), HttpStatus.ACCEPTED);
 	}
@@ -59,7 +60,7 @@ public class AdminController {
 	}
 
 	@DeleteMapping("/deleteaccount")
-	public ResponseEntity<String> deleteAdmin(@Valid @RequestBody Admin dto, @RequestParam String key) {
+	public ResponseEntity<String> deleteAdmin(@Valid @RequestBody LoginDTO dto, @RequestParam String key) {
 		return new ResponseEntity<>(adminService.deleteByUsername(dto, key), HttpStatus.ACCEPTED);
 	}
 

@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.AcmeFresh.DTO.LoginDTO;
 import com.AcmeFresh.modelEntity.AcmeFreshProduce;
 import com.AcmeFresh.modelEntity.StoreCustomerSession;
 import com.AcmeFresh.modelEntity.StoreCustomers;
@@ -51,7 +52,7 @@ public class StoreCustomerServiceImpl implements StoreCustomerService {
 	}
 
 	@Override
-	public String deleteByUsername(StoreCustomers dto, String key) {
+	public String deleteByUsername(LoginDTO dto, String key) {
 		Optional<StoreCustomerSession> otp = scsDAO.findByUuid(key);
 		if (otp.isEmpty())
 			throw new com.AcmeFresh.exceptions.LoginException("User is not logged in, Please login first!");

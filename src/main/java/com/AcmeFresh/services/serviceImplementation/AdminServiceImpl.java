@@ -3,6 +3,9 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.AcmeFresh.DTO.LoginDTO;
+import com.AcmeFresh.DTO.RegisteringDTO;
 import com.AcmeFresh.exceptions.LoginException;
 import com.AcmeFresh.exceptions.UsernameNotFoundException;
 import com.AcmeFresh.modelEntity.AcmeFreshProduce;
@@ -33,7 +36,7 @@ public class AdminServiceImpl implements AdminService{
 	}
 
 	@Override
-	public Admin updatePassword(Admin dto, String username, String key) {
+	public Admin updatePassword(LoginDTO dto, String username, String key) {
 		Optional<AdminSession> otp = adminSessionDao.findByUuid(key);
 		Admin updated = null;
 		if (otp.isEmpty())
@@ -70,7 +73,7 @@ public class AdminServiceImpl implements AdminService{
 	}
 
 	@Override
-	public String deleteByUsername(Admin dto, String key) {
+	public String deleteByUsername(LoginDTO dto, String key) {
 		Optional<AdminSession> otp = adminSessionDao.findByUuid(key);
 		if (otp.isEmpty())
 			throw new LoginException("Admin is not logged in, Please login first!");

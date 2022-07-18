@@ -52,7 +52,7 @@ public class ClientController {
 	}
 
 	@DeleteMapping("/deleteaccount")
-	public ResponseEntity<String> deleteCustomer(@RequestBody StoreClient dto, @RequestParam String key) {
+	public ResponseEntity<String> deleteCustomer(@RequestBody LoginDTO dto, @RequestParam String key) {
 		return new ResponseEntity<>(storeClientService.deleteByUsername(dto, key), HttpStatus.ACCEPTED);
 
 	}

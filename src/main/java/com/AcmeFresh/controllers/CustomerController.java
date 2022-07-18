@@ -51,7 +51,7 @@ public class CustomerController {
 	}
 
 	@DeleteMapping("/deleteaccount")
-	public ResponseEntity<String> deleteCustomer(@RequestBody StoreCustomers dto, @RequestParam String key) {
+	public ResponseEntity<String> deleteCustomer(@RequestBody LoginDTO dto, @RequestParam String key) {
 		return new ResponseEntity<>(storeCustomersService.deleteByUsername(dto, key), HttpStatus.ACCEPTED);
 
 	}

@@ -1,5 +1,6 @@
 package com.AcmeFresh.services.serviceInterfaces;
 
+import com.AcmeFresh.DTO.LoginDTO;
 import com.AcmeFresh.modelEntity.AcmeFreshProduce;
 import com.AcmeFresh.modelEntity.StoreClient;
 
@@ -7,7 +8,7 @@ public interface StoreClientService {
 	
 	public StoreClient  update(StoreClient  update, String Username, String key);
 
-	public String deleteByUsername(StoreClient  dto, String key);
+	public String deleteByUsername(LoginDTO  dto, String key);
 
 	public String logoutClient(String key);
 
